@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
+	<div id="mathapp">
+		<nav>
+			<h1>
+				Math App
+			</h1>
+		</nav>
+
+		<form>
+
+			<input type="text" id="dispBar">
+			<div id="buttonsbar">
+			<button id="one"> 1 </button>
+			<button id="two"> 2 </button>
+			<button id="three"> 3 </button>
+			<button> 4 </button>
+			<button> 5 </button>
+			<button> 6 </button>
+			<button> 7 </button>
+			<button> 8 </button>
+			<button> 9 </button>
+			<button> 0 </button>
+			<button id="add" onclick="operate('+')> + </button>
+			<button id="sub" onclick="operate('-')> - </button>
+			<button id="mul" onclick="operate('*')> * </button>
+			<button id="div" onclick="operate('/')> / </button>
+			<button> = </button>
+		</div>
+		</form>
+
+	</div>
+	<div id="dispText">
+		<h1 id="display"> Please resize the screen size to mobile </h1> 
+	</div>
+<script src="js/script.js"> </script>
+</body>
+</html>

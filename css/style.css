@@ -1,0 +1,62 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+nav{
+	height:60px;
+	width: 100%;
+	color: white;
+	background: red;
+	font-size: 30px;
+	text-align: center;
+}
+form{
+	
+	background: ;
+	width:60%;
+	margin: 50px auto;
+	height: 400px;
+	background: red;
+	/*border: 5px solid white;*/
+
+}
+#dispBar{
+	width: 100%;
+	height:50px;
+	border: 5px solid red;
+}
+#buttonsbar{
+	border: 5px solid red;
+	width: 100%;
+	height: 100%;
+	border:5px solid red;
+}
+button{
+	width:54.5px;
+	height:50px;
+	background: white;
+	color:red;
+	font-size:20px;
+
+}
+#dispText{
+	display:none;
+	}
+
+@media only screen and (min-width: 580px){
+	#dispText{
+		display: block;
+		margin : 300px auto;
+		width:60%;
+		background: red;
+		color:white;
+
+	}
+	#mathapp{
+		display:none;
+
+	}
+
+}
