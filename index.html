@@ -12,32 +12,83 @@
 			</h1>
 		</nav>
 
-		<form>
-
+	
+		<div id="form">
 			<input type="text" id="dispBar">
+
 			<div id="buttonsbar">
-			<button id="one"> 1 </button>
-			<button id="two"> 2 </button>
-			<button id="three"> 3 </button>
-			<button> 4 </button>
-			<button> 5 </button>
-			<button> 6 </button>
-			<button> 7 </button>
-			<button> 8 </button>
-			<button> 9 </button>
-			<button> 0 </button>
-			<button id="add" onclick="operate('+')> + </button>
-			<button id="sub" onclick="operate('-')> - </button>
-			<button id="mul" onclick="operate('*')> * </button>
-			<button id="div" onclick="operate('/')> / </button>
-			<button> = </button>
+
+			<button class="button" id="one"> 1 </button>
+			<button class="button" id="two"> 2 </button>
+			<button class="button" id="three"> 3 </button>
+			<button class="button" id="four"> 4 </button>
+			<br>
+			<button class="button" id="five"> 5 </button>
+			<button class="button" id="six"> 6 </button>
+			<button class="button" id="seven"> 7 </button>
+			<button class="button" id="eight"> 8 </button>
+			<br>
+			<button class="button" id="nine"> 9 </button>
+			<button class="button" id="zero"> 0 </button>
+			<button class="button operator" id="add" > + </button>
+			<button class="button operator" id="sub" > - </button>
+			<br>
+			<button class="button operator" id="mul" > * </button>
+			<button class="button" id="div" > / </button>
+			<button class="button operator" id="eq"> = </button>
+			<button class="button" id="dot"> . </button>
+			<br>
+			
+
+			<button class="button formula" id="squareArea"> area  of square square </button>
+			<button class="button formula"> perimeter of square  </button>
+			<button class="button formula" id="rectArea"> area of rectangle </button>
+			<button class="button formula"> perimeter of rectangle </button>
+			<br>
+			<button class="button formula"> area of right angle triangle </button>
+			<button class="button formula"> area of parallelogram  </button>
+			<button class="button formula"> perimeter of parallelogram </button>
+			<button class="button formula"> area of trapezium </button>
+
+			<div class="input">
+
+				<div class="input1">
+					<input type="text" value="Enter a value" id="formulainput1"> 
+					<button class="small" id="btn1"> click </button>
+				</div>
+
+				<div class="input2">
+					<input type="text" value="Enter a value" id="formulainput2"> 
+					<button class="small" id="btn2"> click </button>
+				</div>
+
+				<div class="input3">
+					<input type="text" value="Enter a value" id="formulainput3"> 
+					<button class="small" id="btn3"> click </button>
+				</div>
+
+			</div>
+
+			<div type="text" id="formulaoutput">  </div>
+			<button class="small" id="clear"> clear </button>
+
+
 		</div>
-		</form>
+
+
+	</div>
+		
 
 	</div>
 	<div id="dispText">
 		<h1 id="display"> Please resize the screen size to mobile </h1> 
 	</div>
-<script src="js/script.js"> </script>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+
+	<script src="js/script.js"> </script>
 </body>
 </html>
