@@ -10,6 +10,42 @@
 			<h1>
 				Math App
 			</h1>
+
+			<div class="menu_icon"> 
+				<img src="image/menu.png" alt="menu" class="menu_img"/>
+ 
+			</div> 
+
+			<div class="menu_list">
+				<ul class="menu_cont">
+					<li class="menu help">Help</li>
+					<li class="menu contact">Contact</li>
+				</ul>
+			</div>
+
+			<div id="help">
+				<div class="close"> &times </div>
+
+				<p class="para"> Use the first four rows for arithmetic operations such as add, subtract, multiply and divide. Numbers with or without decimal point can be used. click on equal sign to see the answer.eg. 12+34=46. The display can be seen on the white space provided at the top. </p> 
+
+				<p class="para"> The next two rows (5,6) are used to see calculated values for the input you give. Blue highlight indicates the button and input area when clicked. The result is displayed at the bottom white space. </p>
+
+
+
+			</div>
+				<div id="contact">
+				<div class="close2"> &times </div>
+
+				<p class="contactpara"> Email: beula.samuel@yoobeecolleges.com</p>
+
+				<div class="facebook">
+
+					<img src="image/facebook.png" alt="facebook" class="fb"/>
+				</div>
+
+
+
+			</div>
 		</nav>
 
 	
@@ -18,25 +54,25 @@
 
 			<div id="buttonsbar">
 
-			<button class="button" id="one"> 1 </button>
-			<button class="button" id="two"> 2 </button>
-			<button class="button" id="three"> 3 </button>
-			<button class="button" id="four"> 4 </button>
+			<button class="button num" id="one"> 1 </button>
+			<button class="button num" id="two"> 2 </button>
+			<button class="button num" id="three"> 3 </button>
+			<button class="button num" id="four"> 4 </button>
 			<br>
-			<button class="button" id="five"> 5 </button>
-			<button class="button" id="six"> 6 </button>
-			<button class="button" id="seven"> 7 </button>
-			<button class="button" id="eight"> 8 </button>
+			<button class="button num" id="five"> 5 </button>
+			<button class="button num" id="six"> 6 </button>
+			<button class="button num" id="seven"> 7 </button>
+			<button class="button num" id="eight"> 8 </button>
 			<br>
-			<button class="button" id="nine"> 9 </button>
-			<button class="button" id="zero"> 0 </button>
-			<button class="button operator" id="add" > + </button>
-			<button class="button operator" id="sub" > - </button>
+			<button class="button num" id="nine"> 9 </button>
+			<button class="button num" id="zero"> 0 </button>
+			<button class="button num operator" id="add" > + </button>
+			<button class="button num operator" id="sub" > - </button>
 			<br>
-			<button class="button operator" id="mul" > * </button>
-			<button class="button" id="div" > / </button>
-			<button class="button operator" id="eq"> = </button>
-			<button class="button" id="dot"> . </button>
+			<button class="button num operator" id="mul" > * </button>
+			<button class="button num operator" id="div" > / </button>
+			<button class="button num" id="eq"> = </button>
+			<button class="button num" id="dot"> . </button>
 			<br>
 			
 
@@ -51,21 +87,24 @@
 			<button class="button formula"> area of trapezium </button>
 
 			<div class="input">
+				<div class="inputtxt">
 
 				<div class="input1">
 					<input type="text" value="Enter a value" id="formulainput1"> 
-					<button class="small" id="btn1"> click </button>
+					
 				</div>
 
 				<div class="input2">
 					<input type="text" value="Enter a value" id="formulainput2"> 
-					<button class="small" id="btn2"> click </button>
+					
 				</div>
 
 				<div class="input3">
 					<input type="text" value="Enter a value" id="formulainput3"> 
-					<button class="small" id="btn3"> click </button>
+					
 				</div>
+			</div>
+				<button class="small" id="btn1"> result </button>
 
 			</div>
 
@@ -76,13 +115,19 @@
 		</div>
 
 
-	</div>
-		
+	</div> 	<!-- </div> Mathapp -->
 
-	</div>
+
+
+
+	<!-- notification -->
+
 	<div id="dispText">
 		<h1 id="display"> Please resize the screen size to mobile </h1> 
 	</div>
+
+
+
 
 	<script
 	  src="https://code.jquery.com/jquery-3.4.1.min.js"

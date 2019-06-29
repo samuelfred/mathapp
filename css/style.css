@@ -12,11 +12,113 @@ nav{
 	color: white;
 	background: #67074e;
 	font-size: 30px;
-	text-align: center;
+	
 }
+h1{
+	float:left;
+	text-align: center;
+	width:90%;
+}
+.menu_icon{
+	width: 5%;
+	float:left;
+	position:fixed;
+	/*padding:2px;*/
+	top:15px;
+	right:5px;
+	
+}
+.menu_icon::after{
+	clear:both;
+}
+.menu_img{
+	width: 100%;
+	
+
+}
+.menu_list{
+	display:none;
+	float:right;
+	position:fixed;
+	/*padding:2px;*/
+	top:45px;
+	right:0px;
+}
+.menu{
+	list-style: none;
+	color: white ;
+	background: #67074e;
+}
+
+.menu_cont{
+	padding-top: 5px;
+	width: 70px;
+	border:2px solid #67074e;
+	font-size: 18px;
+	
+
+}
+#help{
+	display:none;
+	z-index: 5;
+	width:90%;
+	height:300px;
+	position: fixed;
+	top: 100px;
+	left: 10px;
+	border: 5px solid #67074e;
+}
+
+
+#contact{
+	display: none;
+	z-index: 5;
+	width:100%;
+	height:90px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	background: #67074e;
+	color:white;
+}
+.close{
+	width:100%;
+	height: 40px;
+	color: white;
+	background: #67074e;
+}
+
+.para{
+	font-style: italic;
+	font-size: 15px;
+	color: #67074e;
+	margin: 25px 10px;
+	line-height: 20px;
+}
+.contactpara{
+	font-style: italic;
+	font-size: 15px;
+	color: white;
+	float:left;
+	width: 80%;
+
+}
+
+.facebook{
+	width: 20%;
+	float:left;
+
+}
+.fb{
+	width:40px;
+}
+.facebook::after{
+	clear:left;
+}
+
 #form{
 	
-	background: ;
+	
 	width:60%;
 	margin: 50px auto;
 	height: 400px;
@@ -56,28 +158,33 @@ nav{
 	background:white;
 	color: #67074e;
 }
+.inputtxt{
+	width:79.5%;
+	float:left;
+}
 .input1, .input2, .input3{
 	width: 33%;
 	float: left;
+	/*border : 1px solid black;*/
 }
 .input::after{
 	clear: both;
 }
 .small{
-	width:25%;
+	width:20%;
 	float:left;
 	height:25px;
 }
 #formulainput1{
 	
-	width: 75%;
+	width: 100%;
 	height:25px;
 	float:left;
 }
 
 #formulainput2{
 	
-	width: 75%;
+	width: 100%;
 	height:25px;
 	float:left;
 
@@ -88,7 +195,7 @@ nav{
  #formulainput3{
 	
 	
-	width: 75%;
+	width: 100%;
 	height:25px;
 	float:left;
 }
@@ -119,6 +226,7 @@ nav{
 .current{
 	background: blue;
 	color: white;
+	border : 1px solid black;
 }
 
 
