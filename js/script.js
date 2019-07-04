@@ -118,6 +118,8 @@ $('.num').on('click', function(event){
 
 
 var operatorCount=0;
+
+
 $('.operator').on('click', function(){
 	operatorCount +=1;
 	if (operatorCount == 1) {
@@ -134,6 +136,7 @@ $('.operator').on('click', function(){
 } 
 
 });
+
 
 $('#eq').click(function(){
 	
@@ -165,11 +168,18 @@ $('#eq').click(function(){
 	 } else if (myoperator == '/'){
 	 	var result = parseFloat(operand1) / parseFloat(operand2);
 
+	 	
+
 	 }
 
 	 console.log(result);
 
+	 if (result != parseInt(result)) {
+
 	 document.getElementById('dispBar').value += result.toFixed(2);
+	} else {
+		document.getElementById('dispBar').value += result ;
+	}
 });
 
 //menu
@@ -186,7 +196,7 @@ $('.help').click(function(){
 
 $('.contact').click(function(){
 	$('#contact').show();
-	$('#form').hide();
+	//$('#form').hide();
 });
 
 $('.close').click(function(){
@@ -195,5 +205,6 @@ $('.close').click(function(){
 })
 $('.close2').click(function(){
 	$('#contact').hide();
+	$('#help').hide();
 	$('#form').show();
 })

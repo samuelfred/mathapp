@@ -101,6 +101,7 @@ h1{
 	color: white;
 	float:left;
 	width: 80%;
+	margin-top:20px;
 
 }
 
@@ -108,16 +109,16 @@ h1{
 	width: 20%;
 	float:left;
 
+
 }
 .fb{
 	width:40px;
 }
 .facebook::after{
-	clear:left;
+	clear:both;
 }
 
 #form{
-	
 	
 	width:60%;
 	margin: 50px auto;
@@ -233,14 +234,17 @@ h1{
 #dispText{
 	display:none;
 	}
+	.close2{
+		background:black;
+	}
 
-@media only screen and (min-width: 580px){
+@media only screen and (min-width: 600px){
 	#dispText{
 		display: block;
 		margin : 300px auto;
 		width:60%;
-		background: #67074e;
-		color:white;
+		background: yellow;
+		color:black;
 		text-align: center;
 
 	}
